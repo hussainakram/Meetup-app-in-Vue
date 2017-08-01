@@ -6,7 +6,7 @@
           v-for="item in menuItems"
           :key="item.title"
           router
-          nuxt :to="item.link">
+          :to="item.link">
           <v-list-tile-action>
             <v-icon> {{ item.icon }} </v-icon>
           </v-list-tile-action>
@@ -28,7 +28,7 @@
           v-for="item in menuItems"
           :key="item.title"
           router
-          nuxt :to="item.link">
+          :to="item.link">
           <v-icon left dark> {{ item.icon }} </v-icon>
           {{ item.title }}
         </v-btn>
