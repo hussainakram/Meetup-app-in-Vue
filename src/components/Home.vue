@@ -1,3 +1,3 @@
 <template>
-  <v-btn>Home baby</v-btn>
+  <p>This is Home page</p>
 </template>

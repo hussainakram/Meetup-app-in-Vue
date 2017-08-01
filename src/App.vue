@@ -34,6 +34,9 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
+    <main>
+      <router-view></router-view>
+    </main>
   </v-app>
 </template>
 
