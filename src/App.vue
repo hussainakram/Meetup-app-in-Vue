@@ -5,7 +5,6 @@
         <v-list-tile
           v-for="item in menuItems"
           :key="item.title"
-          router
           :to="item.link">
           <v-list-tile-action>
             <v-icon> {{ item.icon }} </v-icon>
@@ -16,7 +15,7 @@
     </v-navigation-drawer>
     <v-toolbar dark class="primary">
       <v-toolbar-side-icon
-      @click.native.stop="sideNav = !sideNav"
+      @click.stop="sideNav = !sideNav"
       class="hidden-sm-and-up"></v-toolbar-side-icon>
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor: pointer">LetsMeet</router-link>
@@ -27,7 +26,6 @@
           class="hidden-xs-only"
           v-for="item in menuItems"
           :key="item.title"
-          router
           :to="item.link">
           <v-icon left dark> {{ item.icon }} </v-icon>
           {{ item.title }}
@@ -49,7 +47,7 @@
           {icon: 'supervisor_account', title: 'View Meetups', link: '/meetups'},
           {icon: 'room', title: 'Organize Meetup', link: '/meetup/new'},
           {icon: 'account_circle', title: 'Profile', link: '/profile'},
-          {icon: 'face', title: 'Sign Up', link: '/sigup'},
+          {icon: 'face', title: 'Sign Up', link: '/signup'},
           {icon: 'lock_open', title: 'Sign In', link: '/sigin'}
         ]
       }
