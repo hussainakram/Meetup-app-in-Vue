@@ -10,19 +10,25 @@ export const store = new Vuex.Store({
         id: 'aqaqa',
         title: 'Meetup in Lahore',
         imageUrl: 'http://pakistantravelplaces.com/wp-content/uploads/2016/07/ae_pak_lahore_0171.jpg',
-        date: '2017-08-02'
+        date: '2017-08-02',
+        location: 'Arfa center, Lahore',
+        description: "It'll be an awesome Meetup!!"
       },
       {
         id: 'aqqa',
         title: 'Meetup in Islamabad',
         imageUrl: 'http://static.thousandwonders.net/Faisal.Mosque.original.9250.jpg',
-        date: '2017-07-20'
+        date: '2017-07-20',
+        location: 'Hotel One, Islamabad',
+        description: "It'll be an awesome Meetup!!"
       },
       {
         id: 'aqaqasa',
         title: 'Meetup in Faisalabad',
         imageUrl: 'https://photos.smugmug.com/Photography/Misc/i-XhjJfVf/11/1f6075d0/XL/IMG_5728-XL.jpg',
-        date: '2017-07-12'
+        date: '2017-07-12',
+        location: 'Qbatch, Faisalabad',
+        description: "It'll be an awesome Meetup!!"
       }
     ],
     user: {

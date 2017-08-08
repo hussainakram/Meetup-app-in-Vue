@@ -11,8 +11,8 @@
             height="400px"
             ></v-card-media>
             <v-card-text>
-              <div class="info--text">{{ meetup.date }}</div>
-              Smooth animations help make a UI feel great. Using Vue's transition system and re-usable functional components, you can easily control the motion of your application.
+              <div class="info--text">{{ meetup.date }} - {{ meetup.location }}</div>
+              <p> {{ meetup.description }} </p>
             </v-card-text>
             <v-spacer></v-spacer>
             <v-btn class="primary">Register</v-btn>
