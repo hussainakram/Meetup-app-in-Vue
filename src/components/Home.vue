@@ -8,7 +8,17 @@
         <v-btn large route to="/meetups/new" class="info">Organize Meetup</v-btn>
       </v-flex>
     </v-layout>
-    <v-layout row wrap>
+    <v-layout>
+      <v-flex xs12 class="text-xs-center">
+        <v-progress-circular
+        indeterminate
+        class="green--text"
+        :width="3"
+        :size="400"
+        v-if="loading"></v-progress-circular>
+      </v-flex>
+    </v-layout>
+    <v-layout row wrap v-if="!loading">
       <v-flex>
         <v-carousel icon="stop">
           <v-carousel-item
@@ -32,6 +42,9 @@
 <script>
   export default {
     computed: {
+      loading () {
+        return this.$store.getters.loading
+      },
       meetups () {
         return this.$store.getters.featuredMeetups
       }
